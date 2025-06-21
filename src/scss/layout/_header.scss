@@ -7,15 +7,17 @@
     height: 600px;
 }
 /* Mobile */
-.nav-header {
+.menu-header {
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    position: fixed;
 }
 
 .menu-hamburger {
     width: 40px;
     height: 40px;
+    position: fixed;
 }
 
 .logo {
@@ -25,6 +27,7 @@
 
 .links {
     display: none;
+    padding: 0px
 }
 
 .logo {
@@ -36,23 +39,32 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
     gap: 74px;
-    margin-top: 90px;
+    margin-top: 250px;
     color: #0c474b;
 }
 
 h1 {
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 36px;
 }
 
 button {
-    width: 150px;
+    width: 180px;
     height: 50px;
-    font-family: Poppins;
-    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
     color: white;
     border: none;
     background-color: #0c474b;
+}
+
+button:hover {
+    background-color: #FF975A;
+    color: #0c474b;
 }
 
 /* Tablet */
@@ -60,12 +72,12 @@ button {
     .first-module {
         gap: 0;
         align-items: flex-start;
-        margin-left: 40px;
     }
     
     .logo {
         max-width: 40%;
     }
+
 }
 
 /* Desktop */
@@ -94,10 +106,19 @@ button {
         color: #0c474b;
     }
 
+    .menu-header {
+        justify-content: flex-start;
+        margin-left: 150px;
+    }
+
+    .logo {
+        margin-left: 100px;
+    }
+
     .first-module {
-        gap: 0;
+        /*gap: 0;*/
         align-items: flex-start;
-        margin-left: 40px;
+        margin: 150px;
 
     }
 

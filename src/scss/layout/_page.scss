@@ -1,6 +1,6 @@
 .page__main {
     padding: 0px;
-    font-family: Poppins;
+    font-family: 'Poppins', sans-serif;
     wrap: wrap
 }
 
@@ -12,6 +12,16 @@
     flex-direction: column;
     text-align: center;
     color: #0c474b;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 20px;
 }
 
 /* CSS del Tercer módulo */
@@ -47,6 +57,7 @@
     color: white;
     font-size: 19px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 /* Tablet */
