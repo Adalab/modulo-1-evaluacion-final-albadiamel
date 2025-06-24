@@ -1,7 +1,8 @@
+@use "../core/variables" as vars;
+
 .page__main {
     padding: 0px;
-    font-family: 'Poppins', sans-serif;
-    wrap: wrap
+    font-family: vars.$mainFont;
 }
 
 /* CSS del Segundo módulo */
@@ -11,7 +12,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: #0c474b;
+    color: vars.$fontColor;
 }
 
 h2 {
@@ -38,7 +39,7 @@ h3 {
 .third-article {
     padding: 0px;
     background-color: #f0ebe5;
-    color: #0c474b;
+    color: vars.$fontColor;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -61,7 +62,7 @@ h3 {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
 
     /* CSS del Segundo módulo */
     .first-article {
@@ -93,8 +94,8 @@ h3 {
    
 }
 
-/* Desktop */
-@media screen and (min-width: 1024px) {
+/* Desktop (en mi pc solo puedo ver esta vista con un min-width de 1024px pero lo dejo en 1728px porque así lo pide el ejercicio) */
+@media screen and (min-width: 1728px) {
     
     /* CSS del Cuarto módulo */
     .third-article {

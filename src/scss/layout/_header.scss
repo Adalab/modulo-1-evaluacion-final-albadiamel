@@ -1,3 +1,5 @@
+@use "../core/variables" as vars;
+
 .page__header {
     padding: 20px;
     background-image: url('../images/header.jpg');
@@ -25,14 +27,6 @@
     height: auto;
 }
 
-.links {
-    display: none;
-    padding: 0px
-}
-
-.logo {
-
-}
 /* texto y botón del header */
 .first-module {
     display: flex;
@@ -46,7 +40,7 @@
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: vars.$mainFont;
     font-weight: 600;
     font-size: 36px;
 }
@@ -54,21 +48,20 @@ h1 {
 button {
     width: 180px;
     height: 50px;
-    font-family: 'Poppins', sans-serif;
+    font-family: vars.$mainFont;
     font-size: 16px;
     font-weight: 600;
     color: white;
     border: none;
     background-color: #0c474b;
-}
-
-button:hover {
-    background-color: #FF975A;
-    color: #0c474b;
+    &:hover {
+        background-color: #FF975A;
+        color: #0c474b;
+    }
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     .first-module {
         gap: 0;
         align-items: flex-start;
@@ -80,9 +73,8 @@ button:hover {
 
 }
 
-/* Desktop */
-@media screen and (min-width: 1024px) {
-    
+/* Desktop (en mi pc solo puedo ver esta vista con un min-width de 1024px pero lo dejo en 1728px porque así lo pide el ejercicio) */
+@media screen and (min-width: 1728px) { 
     .menu-hamburger {
         display: none;
     }
@@ -94,16 +86,14 @@ button:hover {
     .links {
         display: flex;
         gap: 40px;
-    }
-
-    .links li {
-        list-style: none;
-    }
-
-    .links li a {
-        text-decoration: none;
-        font-family: Poppins;
-        color: #0c474b;
+        li {
+            list-style: none;
+            a {
+               text-decoration: none;
+               font-family: vars.$mainFont;
+               color: vars.$fontColor;
+            }
+        }
     }
 
     .menu-header {

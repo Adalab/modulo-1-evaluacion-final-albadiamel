@@ -1,7 +1,9 @@
+@use "../core/variables" as vars;
+
 .page__footer {
     padding: 100px;
     background-color: #0c474b;
-    font-family: 'Poppins', sans-serif;
+    font-family: vars.$mainFont;
     color: #b6c8c9;
     display: flex;
     flex-direction: column;
@@ -35,7 +37,7 @@ ul {
 }
 
 /* Tablet */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     .page__footer {
         flex-direction: row;
         justify-content: space-between;
@@ -43,11 +45,11 @@ ul {
     .arrow-icon {
         display: flex;
         height: fit-content;
-        align-self: end; /* Para situar la flecha en la parte baja */
+        align-self: end;
     }
 }
 
 /* Desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1728px) {
 
 }
